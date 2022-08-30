@@ -18,8 +18,8 @@ public class CopyFile {
         OutputStream out = Files.newOutputStream(Path.of(args[1]));*/
 
         //InputStream in = Files.newInputStream(Path.of("Test"));
-        InputStream in = Files.newInputStream(Path.of("Test"), StandardOpenOption.READ);
-        OutputStream out = Files.newOutputStream(Path.of("Test1"));
+        InputStream in = Files.newInputStream(Path.of("Test.txt"), StandardOpenOption.READ);
+        OutputStream out = Files.newOutputStream(Path.of("Test1.txt"));
 
 
         //in.transferTo(out);
