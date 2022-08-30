@@ -4,7 +4,8 @@ public class FileClassExample {
 
     public static void main(String[] args) {
 
-        // file = An abstract representation of file and directory pathnames
+        // If the file is in the Project folder then you only need to write the file name and extension but if it's
+        //not then you need to provide the full path in the new File constructor.
 
         File file = new File("Test.txt");
 
