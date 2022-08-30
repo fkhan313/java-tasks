@@ -5,7 +5,8 @@ public class FileClassExample {
     public static void main(String[] args) {
 
         // If the file is in the Project folder then you only need to write the file name and extension but if it's
-        //not then you need to provide the full path in the new File constructor.
+        //not then you need to provide the full path in the new File constructor. Example below:
+        //File file = new File("C:\\Users\\fkhan\\OneDrive\\Java Projects\\JavaTasks\\Test.txt");
 
         File file = new File("Test.txt");
 
