@@ -1,6 +1,7 @@
 package io;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -10,6 +11,9 @@ public class PathClassExample {
 
         //File & Path API
         Path p = Path.of(".");
+        //create a new directory. Will return error if folder already exists
+        Path newDirectory = Path.of("C:\\Users\\fkhan\\Downloads\\testOutput\\test\\");
+        Path outputFolder = Files.createDirectory(newDirectory);
 
         System.out.println("Path: "+p.toAbsolutePath().normalize().toUri()); //to Uri
 
